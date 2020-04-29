@@ -1,0 +1,28 @@
+#scratch_9 file
+class Question:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+#next file
+
+
+from scratch_9 import Question
+question_prompts = [
+    "What is my name?\n(a) Matt\n(b) John\n(c) Peter\n\n",
+    "What is the best asset class YTD?\nGold \n(b) Bitcoin\n(c) Equities\n\n",
+    "What cross currency rate has been most pressured?\n(a) USD/BRL\n (b) USD/JPY\n(c) USD/CNY\n\n"
+]
+questions = [
+    Question(question_prompts[0], "a"),
+    Question(question_prompts[1], "a"),
+    Question(question_prompts[2], "a"),
+]
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+            score +=1
+    print("You got " + str(score) + "/" + str(len(questions)) + " correct")
+
+run_test(questions)
