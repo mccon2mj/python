@@ -1,0 +1,23 @@
+class Student:
+    def __init__(self, name, major, gpa):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+
+    def deans_list(self):
+        if self.gpa >= 3.5 and self.gpa < 3.9:
+            return True
+        else:
+            return False
+    def presidents_list(self):
+        if self.gpa > 3.9:
+            return True
+        else:
+            return False
+
+
+student1 = Student("Matt", "Economics", 3.5)
+student2 = Student("Danielle", "Health Services", 3.9)
+student3 = Student("Phil", "History", 1.5)
+
+print(student1.deans_list())
