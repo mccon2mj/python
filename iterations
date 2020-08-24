@@ -1,0 +1,15 @@
+#running iterations for amount of numbers, sum, and largest value
+largest_we_have = 0
+count = 0
+addsum = 0
+print("Before", largest_we_have)
+for number in [5, 55, 555, 222, 21, 10, 1, 56, 93]:
+	count = count + 1
+	addsum = addsum + number
+	if number > largest_we_have:
+		largest_we_have = number
+	print(largest_we_have, number)
+print("Largest Value", largest_we_have)
+print("Count of numbers are: ", count)
+print("Added numbers are: ", addsum)
+
