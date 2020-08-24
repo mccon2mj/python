@@ -1,0 +1,19 @@
+#simple function
+def greetings(lang):
+	if lang == "es":
+		print("Hola!")
+	elif lang == "en":
+		print("Hello!")
+	elif lang == "fr":
+		print("bonjour")
+	else: 
+		print("Sorry, being rude and not greeting you!")
+
+greetings(input("Input greeting here!\n\n"))
+
+#simple input multiplier
+def multfour(a, b, c, d):
+	mult = a * b * c * d
+	return mult
+final = multfour(int(input("Input #1!\n")), int(input("Input #2!\n")), int(input("Input #3!\n")), int(input("Input #4!\n")))
+print("Final Multiplied Number", final)
