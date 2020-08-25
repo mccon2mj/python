@@ -1,0 +1,38 @@
+###From Reuters Article Sifting for Trump Context###
+text_input = input("Input File Name Here: ")
+try: 
+	text_file = open(text_input, encoding="utf8" )
+except:
+	print("Cannot Open File")
+	quit()
+count_trump = 0
+for line in text_file:
+	line = line.rstrip()
+	if line.startswith("Trump"):
+		count_trump +=1
+		print(line)
+print(count_trump)
+	
+  ###article I named "text.txt" which I plugged into the input function: ###
+  
+  https://www.reuters.com/article/us-usa-election-convention/trump-fellow-republicans-paint-dire-portrait-of-a-u-s-under-biden-idUSKBN25K0EQ
+  
+  Trump set the tone early in the day when he addressed delegates in Charlotte, North Carolina, after formally securing their nomination for another term, and claimed without evidence that Democrats were trying to steal the election.
+
+Republicans had vowed to offer an inspiring, positive message in contrast to what they characterized as a dark and gloomy Democratic convention last week. But the first night’s prime-time program featured speakers who peppered their remarks with ominous predictions if Democrats win power.
+
+“They want to destroy this country and everything that we have fought for and hold dear,” Trump campaign adviser Kimberly Guilfoyle said. “They want to steal your liberty, your freedom. They want to control what you see, and think, and believe, so they can control how you live.”
+
+The four-day convention opened at a critical juncture for Trump, 74, who trails Biden, 77 in national opinion polls during a pandemic that has killed here more than 176,000 Americans and erased millions of jobs.
+
+Democrats drew their own dismal picture of what four more years under Trump would look like at their convention last week.
+
+Like its Democratic counterpart, the Republican convention was largely virtual. Most speakers addressed a quiet auditorium in Washington, D.C., bowing to the reality of the pandemic despite Trump’s having pushed for a big event in front of thousands of raucous admirers.
+
+Trump has focused on a “law and order” response to widespread protests following the police killing of George Floyd, a Black man in Minneapolis, and he has pushed schools and businesses to reopen despite the pandemic. Both messages represent the campaign’s effort to win back suburban voters, especially women, who have abandoned the Republican Party in droves during the Trump era.
+
+Donald Trump Jr., the president’s oldest son and Guilfoyle’s boyfriend, portrayed the ongoing civil unrest as violent assaults on small businesses by anarchists and said Democrats would fail to keep neighborhoods safe.
+
+The dystopian language echoed that of Trump’s 2017 inaugural speech, when he vowed to end the “American carnage” of crime, poverty and manufacturing decline. It remains to be seen whether voters find the same argument as compelling after Trump has held power for more than three years.
+
+  
