@@ -1,0 +1,6 @@
+initial_dict = {'a': 7, 'b': 77, 'c': 155}
+the_list = list()
+for k, v in initial_dict.items():
+	the_list.append((v, k))
+the_list = sorted(the_list, reverse=True)
+print(the_list)
