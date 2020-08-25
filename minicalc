@@ -1,0 +1,49 @@
+sum = 0
+count = 0
+while True:
+	try: 
+		number = input("Enter a number here: ")
+		if number == "done" :
+			break
+	except: 
+		print("Type in a number!")
+	try:
+		number = float(number)
+		count += 1
+		sum = number + sum
+	except:
+		print("Input a number")
+print("Sum: ", sum)
+print("Count: ", count)
+print("Average: ", sum / count)
+#####################################################
+
+numberlist = list()
+total = 0
+count = 0
+while True:
+	try:
+		value = input("Input Number Here: ")
+		if value == "done":
+			break
+	except:
+		print("Type in a number please")
+	try:
+		value = float(value)
+		numberlist.append(value)
+		count += 1
+		total = total + value
+	except:
+		print("Type a number please!")
+print("Sum: ", total)
+print("Count: ", count)
+print("Average: ", total / count)
+
+#####################################################
+lst = []
+y = int(input("How many numbers do you want to calculate?"))
+for x in range(y): 
+	inp_numbers = int(input("Input Number Here\n "))
+	final_list = lst.append(inp_numbers)
+	
+print("Sum of the list elements: ", (sum(final_list)))
