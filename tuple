@@ -1,0 +1,13 @@
+open_file = open("text.txt", encoding="UTF8")
+dict_count = dict()
+for line in open_file:
+	words = line.split()
+	for one_word in words:
+		dict_count[one_word] = dict_count.get(one_word, 0) + 1
+list_words = list()
+for k, v in dict_count.items():
+	tuple = (v, k)
+	list_words.append(tuple)
+list_words = sorted(list_words, reverse=True)
+for v, k in list_words[:10]:
+	print(k, ':', v, ' times mentioned')
