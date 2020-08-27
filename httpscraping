@@ -1,0 +1,10 @@
+import urllib.request, urllib.parse, urllib.error
+
+open_url = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+
+word_count = dict()
+for line in open_url:
+	line_words = line.decode().split()
+	for word in line_words:
+		word_count[word] = word_count.get(word, 0) + 1
+print(word_count)
